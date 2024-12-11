@@ -30,7 +30,10 @@ type Producer struct {
 }
 
 func NewProducer(producerConfig *ProducerConfig) (*Producer, error) {
-	logger := logConfig(producerConfig)
+	logger := producerConfig.Logger
+	if logger == nil {
+		logger = logConfig(producerConfig)
+	}
 	finalProducerConfig := validateProducerConfig(producerConfig, logger)
 
 	client, err := createClient(finalProducerConfig, false, logger)

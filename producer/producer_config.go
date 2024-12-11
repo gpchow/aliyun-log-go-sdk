@@ -5,6 +5,7 @@ import (
 	"time"
 
 	sls "github.com/aliyun/aliyun-log-go-sdk"
+	"github.com/go-kit/kit/log"
 )
 
 const Delimiter = "|"
@@ -24,6 +25,7 @@ type ProducerConfig struct {
 	MaxRetryBackoffMs     int64
 	AdjustShargHash       bool
 	Buckets               int
+	Logger                log.Logger
 	AllowLogLevel         string
 	LogFileName           string
 	IsJsonType            bool
