@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/aliyun/aliyun-log-go-sdk/util"
+	"github.com/gpchow/aliyun-log-go-sdk/util"
 )
 
 // GlobalForceUsingHTTP if GlobalForceUsingHTTP is true, then all request will use HTTP(ignore LogProject's UsingHTTP flag)

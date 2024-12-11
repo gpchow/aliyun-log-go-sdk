@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	sls "github.com/aliyun/aliyun-log-go-sdk"
-	"github.com/aliyun/aliyun-log-go-sdk/producer"
 	"github.com/gogo/protobuf/proto"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
+	"github.com/gpchow/aliyun-log-go-sdk/producer"
 )
 
 func main() {

@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	sls "github.com/aliyun/aliyun-log-go-sdk"
 	"github.com/gogo/protobuf/proto"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
 )
 
 func TestV4Sign(t *testing.T) {

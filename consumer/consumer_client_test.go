@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	sls "github.com/aliyun/aliyun-log-go-sdk"
 	"github.com/go-kit/kit/log"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
 	"github.com/stretchr/testify/assert"
 )
 

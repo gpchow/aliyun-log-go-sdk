@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	sls "github.com/aliyun/aliyun-log-go-sdk"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
 )
 
 func TestStartAndStop(t *testing.T) {

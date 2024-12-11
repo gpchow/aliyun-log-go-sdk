@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/aliyun/aliyun-log-go-sdk"
-	config "github.com/aliyun/aliyun-log-go-sdk/example/config/util"
-	"github.com/aliyun/aliyun-log-go-sdk/example/util"
+	"github.com/gpchow/aliyun-log-go-sdk"
+	config "github.com/gpchow/aliyun-log-go-sdk/example/config/util"
+	"github.com/gpchow/aliyun-log-go-sdk/example/util"
 )
 
 func main() {

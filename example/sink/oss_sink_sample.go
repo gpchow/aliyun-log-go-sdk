@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	sls "github.com/aliyun/aliyun-log-go-sdk"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
 	"time"
 )
 
@@ -44,8 +44,8 @@ func main() {
 		fmt.Println(total)
 		fmt.Println(count)
 	}
-	//client.UpdateExport(projectName, getOssExport(contentType, compressType))
-	//client.DeleteExport(projectName, jobName)
+	// client.UpdateExport(projectName, getOssExport(contentType, compressType))
+	// client.DeleteExport(projectName, jobName)
 }
 
 func getOssExport(contentType sls.OSSContentType, compressionType sls.OSSCompressionType) *sls.Export {

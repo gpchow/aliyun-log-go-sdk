@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/aliyun/aliyun-log-go-sdk/producer"
+	"github.com/gpchow/aliyun-log-go-sdk/producer"
 )
 
 func main() {
@@ -15,7 +15,7 @@ func main() {
 	producerConfig.Endpoint = os.Getenv("Endpoint")
 	producerConfig.AccessKeyID = os.Getenv("AccessKeyID")
 	producerConfig.AccessKeySecret = os.Getenv("AccessKeySecret")
-	//When the producer is closed, if the StsTokenShutDown parameter is not set to nil, it will actively call the close method to close the channel.
+	// When the producer is closed, if the StsTokenShutDown parameter is not set to nil, it will actively call the close method to close the channel.
 	producerConfig.StsTokenShutDown = make(chan struct{})
 	producerConfig.UpdateStsToken = updateStsToken
 	producerInstance, err := producer.NewProducer(producerConfig)

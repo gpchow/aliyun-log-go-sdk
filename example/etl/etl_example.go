@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	sls "github.com/aliyun/aliyun-log-go-sdk"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
 )
 
 const (

@@ -1,7 +1,7 @@
 package util
 
 import (
-	"github.com/aliyun/aliyun-log-go-sdk/example/util"
+	"github.com/gpchow/aliyun-log-go-sdk/example/util"
 )
 
 func CheckConfigExist(confName string) (exist bool, err error) {

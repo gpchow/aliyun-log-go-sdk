@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	sls "github.com/aliyun/aliyun-log-go-sdk"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
 )
 
 type ConsumerClient struct {

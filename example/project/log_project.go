@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/aliyun/aliyun-log-go-sdk/example/util"
+	"github.com/gpchow/aliyun-log-go-sdk/example/util"
 )
 
-func main(){
+func main() {
 	fmt.Println("Create Project")
-	_, err := util.Client.CreateProject(util.ProjectName,"Project used for testing")
+	_, err := util.Client.CreateProject(util.ProjectName, "Project used for testing")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -20,7 +20,7 @@ func main(){
 	fmt.Println("project created successfully:", project.Name)
 
 	project, err = util.Client.UpdateProject(util.ProjectName, "Updated description")
-	if err != nil{
+	if err != nil {
 		panic(err)
 	}
 	fmt.Println("Modify the description of the project successfully")

@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	sls "github.com/aliyun/aliyun-log-go-sdk"
 	"github.com/gogo/protobuf/proto"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
 )
 
 type ProducerBatch struct {

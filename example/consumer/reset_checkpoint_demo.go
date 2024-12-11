@@ -7,9 +7,9 @@ import (
 	"syscall"
 	"time"
 
-	sls "github.com/aliyun/aliyun-log-go-sdk"
-	consumerLibrary "github.com/aliyun/aliyun-log-go-sdk/consumer"
 	"github.com/go-kit/kit/log/level"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
+	consumerLibrary "github.com/gpchow/aliyun-log-go-sdk/consumer"
 )
 
 // README :

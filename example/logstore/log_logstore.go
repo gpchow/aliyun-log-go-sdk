@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/aliyun/aliyun-log-go-sdk"
-	"github.com/aliyun/aliyun-log-go-sdk/example/util"
+	"github.com/gpchow/aliyun-log-go-sdk"
+	"github.com/gpchow/aliyun-log-go-sdk/example/util"
 )
 
 func main() {
-	err := util.Client.CreateLogStore(util.ProjectName,util.LogStoreName,2,2,true,64)
+	err := util.Client.CreateLogStore(util.ProjectName, util.LogStoreName, 2, 2, true, 64)
 	if err != nil {
 		panic(err)
 	}
@@ -20,13 +20,13 @@ func main() {
 	fmt.Println("create logstore successfully:", logstore.Name)
 
 	updateLogstore := &sls.LogStore{
-		Name:util.LogStoreName,
-		TTL:2,
-		ShardCount:10,
-		AutoSplit:false,
-		WebTracking:true,
+		Name:        util.LogStoreName,
+		TTL:         2,
+		ShardCount:  10,
+		AutoSplit:   false,
+		WebTracking: true,
 	}
-	err = util.Client.UpdateLogStoreV2(util.ProjectName,updateLogstore)
+	err = util.Client.UpdateLogStoreV2(util.ProjectName, updateLogstore)
 	if err != nil {
 		panic(err)
 	}

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/aliyun/aliyun-log-go-sdk/producer"
+	"github.com/gpchow/aliyun-log-go-sdk/producer"
 )
 
 type Callback struct {

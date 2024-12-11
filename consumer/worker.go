@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	sls "github.com/aliyun/aliyun-log-go-sdk"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
 	"go.uber.org/atomic"
 	lumberjack "gopkg.in/natefinch/lumberjack.v2"
 )
@@ -64,7 +64,7 @@ func InitConsumerWorkerWithProcessor(option LogHubConfig, processor Processor) *
 		consumerHeatBeat:   consumerHeatBeat,
 		client:             consumerClient,
 		workerShutDownFlag: atomic.NewBool(false),
-		//shardConsumer:      make(map[int]*ShardConsumerWorker),
+		// shardConsumer:      make(map[int]*ShardConsumerWorker),
 		processor: processor,
 		Logger:    logger,
 	}

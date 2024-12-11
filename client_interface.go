@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/aliyun/aliyun-log-go-sdk/util"
+	"github.com/gpchow/aliyun-log-go-sdk/util"
 )
 
 // CreateNormalInterface create a normal client.

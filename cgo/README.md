@@ -27,8 +27,8 @@ CGO_ENABLED=1 go build
 
 ```golang
 import (
-    cgo "github.com/aliyun/aliyun-log-go-sdk/cgo"
-    sls "github.com/aliyun/aliyun-log-go-sdk"
+    cgo "github.com/gpchow/aliyun-log-go-sdk/cgo"
+    sls "github.com/gpchow/aliyun-log-go-sdk"
 )
 cgo.SetZstdCgoCompressor(1)
 ```
@@ -39,8 +39,8 @@ cgo.SetZstdCgoCompressor(1)
 import (
 	"time"
 
-	cgo "github.com/aliyun/aliyun-log-go-sdk/cgo"
-	sls "github.com/aliyun/aliyun-log-go-sdk"
+	cgo "github.com/gpchow/aliyun-log-go-sdk/cgo"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
 	"github.com/golang/protobuf/proto"
 )
 

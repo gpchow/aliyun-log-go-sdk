@@ -1,6 +1,6 @@
 package consumerLibrary
 
-import sls "github.com/aliyun/aliyun-log-go-sdk"
+import sls "github.com/gpchow/aliyun-log-go-sdk"
 
 type Processor interface {
 	Process(int, *sls.LogGroupList, CheckPointTracker) (string, error)

@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	sls "github.com/aliyun/aliyun-log-go-sdk"
-	consumerLibrary "github.com/aliyun/aliyun-log-go-sdk/consumer"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
+	consumerLibrary "github.com/gpchow/aliyun-log-go-sdk/consumer"
 )
 
 func main() {

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	sls "github.com/aliyun/aliyun-log-go-sdk"
+	sls "github.com/gpchow/aliyun-log-go-sdk"
 )
 
 func crud(client *sls.Client, sourceProject string, aggRules *sls.MetricAggRules, testId string) {

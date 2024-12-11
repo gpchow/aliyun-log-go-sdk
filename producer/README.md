@@ -19,10 +19,10 @@ Aliyun LOG Go Producer 是一个易于使用且高度可配置的 golang类库�
 
 1.在$GOPATH/src/github.com目录下创建aliyun目录，
 
-2.克隆代码到创建的aliyun目录下 (源码地址：[aliyun-go-consumer-library](https://github.com/aliyun/aliyun-log-go-sdk))。
+2.克隆代码到创建的aliyun目录下 (源码地址：[aliyun-go-consumer-library](https://github.com/gpchow/aliyun-log-go-sdk))。
 
 ```shell
-git clone https://github.com/aliyun/aliyun-log-go-sdk.git
+git clone https://github.com/gpchow/aliyun-log-go-sdk.git
 ```
 
 3.安装google提供的序列化工具包到自己的GOPATH目录下面
@@ -36,7 +36,7 @@ go get github.com/gogo/protobuf/proto
 **1.配置ProducerConfig**
 
 ProducerConfig 是提供给用户的配置类，用于配制发送策略，您可以根据不同的需求设置不同的值，具体的参数含义如文章尾producer配置详解所示。
-producer同时提供了简单的使用代码simple:([producer_simple_demo](https://github.com/aliyun/aliyun-log-go-sdk/blob/master/example/producer/producer_simple_demo.go))
+producer同时提供了简单的使用代码simple:([producer_simple_demo](https://github.com/gpchow/aliyun-log-go-sdk/blob/master/example/producer/producer_simple_demo.go))
 
 **2.启动producer进程**
 
@@ -146,13 +146,10 @@ func(callback *Callback)Fail(result *producer.Result){
 
 ## 关于性能
 
-- [性能测试报告](https://github.com/aliyun/aliyun-log-go-sdk/blob/master/producer/PERFORMANCE_TEST.md)
+- [性能测试报告](https://github.com/gpchow/aliyun-log-go-sdk/blob/master/producer/PERFORMANCE_TEST.md)
 
 
 
 ## 问题反馈
 
-如果您在使用过程中遇到了问题，可以创建 [GitHub Issue](<https://github.com/aliyun/aliyun-log-go-sdk>)或者前往阿里云支持中心[提交工单](https://workorder.console.aliyun.com/#/ticket/createIndex)。
-
-
-
+如果您在使用过程中遇到了问题，可以创建 [GitHub Issue](<https://github.com/gpchow/aliyun-log-go-sdk>)或者前往阿里云支持中心[提交工单](https://workorder.console.aliyun.com/#/ticket/createIndex)。
