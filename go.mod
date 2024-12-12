@@ -9,7 +9,6 @@ require (
 	github.com/alibabacloud-go/sts-20150401/v2 v2.0.2
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/go-kit/kit v0.13.0
-	github.com/gogo/protobuf v1.3.2
 	github.com/klauspost/compress v1.17.11
 	github.com/pierrec/lz4 v2.6.1+incompatible
 	github.com/pkg/errors v0.9.1

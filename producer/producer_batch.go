@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gogo/protobuf/proto"
 	sls "github.com/gpchow/aliyun-log-go-sdk"
+	"google.golang.org/protobuf/proto"
 )
 
 type ProducerBatch struct {

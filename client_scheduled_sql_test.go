@@ -2,12 +2,13 @@ package sls
 
 import (
 	"fmt"
-	"github.com/gogo/protobuf/proto"
-	"github.com/stretchr/testify/suite"
 	"math/rand"
 	"os"
 	"testing"
 	"time"
+
+	"github.com/stretchr/testify/suite"
+	"google.golang.org/protobuf/proto"
 )
 
 func TestScheduledSQL(t *testing.T) {

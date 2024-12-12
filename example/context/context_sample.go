@@ -6,9 +6,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/gogo/protobuf/proto"
 	sls "github.com/gpchow/aliyun-log-go-sdk"
 	"github.com/gpchow/aliyun-log-go-sdk/example/util"
+	"google.golang.org/protobuf/proto"
 )
 
 func panicCheck(err error, msg string) {

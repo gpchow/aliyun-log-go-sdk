@@ -3,17 +3,16 @@ package sls
 import (
 	"encoding/json"
 	"fmt"
-	"time"
-
 	"io/ioutil"
 	"net/http"
 	"net/http/httputil"
 	"net/url"
 	"strconv"
+	"time"
 
 	"github.com/go-kit/kit/log/level"
-	"github.com/gogo/protobuf/proto"
 	"github.com/pierrec/lz4"
+	"google.golang.org/protobuf/proto"
 )
 
 // this file is deprecated and no maintenance

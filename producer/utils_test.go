@@ -1,11 +1,12 @@
 package producer
 
 import (
-	"github.com/gogo/protobuf/proto"
-	"github.com/gpchow/aliyun-log-go-sdk"
 	"reflect"
 	"testing"
 	"time"
+
+	"github.com/gpchow/aliyun-log-go-sdk"
+	"google.golang.org/protobuf/proto"
 )
 
 func TestGetTimeMs(t *testing.T) {

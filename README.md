@@ -282,5 +282,5 @@ if err != nil {
 ### 更新protobuf工具
 
 ```
-protoc -I=. -I=$GOPATH/src -I=$GOPATH/src/github.com/gogo/protobuf/protobuf --gofast_out=. log.proto
+protoc -I=. -I=$GOPATH/src -I=$GOPATH/src/google.golang.org/protobuf/protobuf --gofast_out=. log.proto
 ```

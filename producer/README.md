@@ -28,7 +28,7 @@ git clone https://github.com/gpchow/aliyun-log-go-sdk.git
 3.安装google提供的序列化工具包到自己的GOPATH目录下面
 
 ```shell
-go get github.com/gogo/protobuf/proto
+go get google.golang.org/protobuf/proto
 ```
 
 # 使用步骤

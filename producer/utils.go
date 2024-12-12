@@ -1,8 +1,8 @@
 package producer
 
 import (
-	"github.com/gogo/protobuf/proto"
 	"github.com/gpchow/aliyun-log-go-sdk"
+	"google.golang.org/protobuf/proto"
 )
 
 func GenerateLog(logTime uint32, addLogMap map[string]string) *sls.Log {

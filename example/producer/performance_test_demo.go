@@ -8,9 +8,9 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/gogo/protobuf/proto"
 	sls "github.com/gpchow/aliyun-log-go-sdk"
 	"github.com/gpchow/aliyun-log-go-sdk/producer"
+	"google.golang.org/protobuf/proto"
 )
 
 var valueList [][]*string

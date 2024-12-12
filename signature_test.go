@@ -3,10 +3,11 @@ package sls
 import (
 	"crypto/md5"
 	"fmt"
-	"github.com/gogo/protobuf/proto"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
-	"testing"
+	"google.golang.org/protobuf/proto"
 )
 
 type SignerV1Suite struct {

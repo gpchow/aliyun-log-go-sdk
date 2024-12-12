@@ -37,4 +37,4 @@ go get github.com/gpchow/aliyun-log-go-sdk
 
 # For developer
 ### Update log protobuf
-`protoc -I=. -I=$GOPATH/src -I=$GOPATH/src/github.com/gogo/protobuf/protobuf --gofast_out=. log.proto`
+`protoc -I=. -I=$GOPATH/src -I=$GOPATH/src/google.golang.org/protobuf/protobuf --gofast_out=. log.proto`
