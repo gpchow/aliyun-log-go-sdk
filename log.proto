@@ -1,22 +1,17 @@
 syntax = "proto2";
 package sls;
-
-import "github.com/gogo/protobuf/gogoproto/gogo.proto";
-
-option (gogoproto.sizer_all) = true;
-option (gogoproto.marshaler_all) = true;
-option (gogoproto.unmarshaler_all) = true;
+option go_package = "aliyun/sls";
 
 message LogContent
 {
     required string Key = 1;
     required string Value = 2;
-}  
+}
 
 message Log
 {
     required uint32 Time = 1;// UNIX Time Format
-    
+
     repeated LogContent Contents= 2;
 
     optional fixed32 TimeNs = 4;
@@ -40,7 +35,7 @@ message LogGroup
 message SlsLogPackage
 {
     required bytes data = 1;  // the serialized data of LogGroup , may be compressed
-    optional int32 uncompress_size = 2;  
+    optional int32 uncompress_size = 2;
 }
 
 message SlsLogPackageList
