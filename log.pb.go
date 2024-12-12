@@ -191,6 +191,7 @@ type LogGroup struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
+	cursor        string `json:"-"`
 
 	Logs        []*Log    `protobuf:"bytes,1,rep,name=Logs" json:"Logs,omitempty"`
 	Category    *string   `protobuf:"bytes,2,opt,name=Category" json:"Category,omitempty"`
