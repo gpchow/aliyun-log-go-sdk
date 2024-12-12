@@ -76,7 +76,7 @@ func initProducerBatch(packIdGenerator *PackIdGenerator, logData interface{}, ca
 	} else {
 		producerBatch.shardHash = &shardHash
 	}
-	producerBatch.totalDataSize = int64(producerBatch.logGroup.Size())
+	producerBatch.totalDataSize = int64(proto.Size(producerBatch.logGroup)) // int64(producerBatch.logGroup.Size())
 
 	if callBackFunc != nil {
 		producerBatch.callBackList = append(producerBatch.callBackList, callBackFunc)
